@@ -1,0 +1,28 @@
+*{
+    border: 0px;
+    padding: 0px;
+}
+body{
+    background-color: purple;
+    color: white;
+}
+.Only{
+    max-width: 350px;
+    border: 5px;
+    border-color: white;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 200px;
+}
+
+#button{
+    padding: 5px;
+    border-radius: 20%;
+    background-color: blue;
+    color: white;
+}

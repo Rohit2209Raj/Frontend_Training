@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Black and White Chess Board</title>
+
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .chessboard {
+            width: 640px;
+            height: 640px;
+            display: grid;
+            grid-template-columns: repeat(8, 80px);
+            grid-template-rows: repeat(8, 80px);
+            border: 4px solid black;
+        }
+
+        .square {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 58px;
+        }
+
+        /* Only black and white squares */
+        .white-square {
+            background-color: white;
+        }
+
+        .black-square {
+            background-color: black;
+        }
+
+        .black-piece {
+    color: black;
+    text-shadow:
+        2px 0 white,
+        -2px 0 white,
+        0 2px white,
+        0 -2px white,
+        2px 2px white,
+        -2px -2px white,
+        2px -2px white,
+        -2px 2px white;
+}
+
+.white-piece {
+    color: white;
+    text-shadow:
+        2px 0 black,
+        -2px 0 black,
+        0 2px black,
+        0 -2px black,
+        2px 2px black,
+        -2px -2px black,
+        2px -2px black,
+        -2px 2px black;
+}
+    </style>
+</head>
+
+<body>
+
+<div class="chessboard">
+
+    <!-- BLACK PIECES -->
+    <div class="square white-square black-piece">♜</div>
+    <div class="square black-square black-piece">♞</div>
+    <div class="square white-square black-piece">♝</div>
+    <div class="square black-square black-piece">♛</div>
+    <div class="square white-square black-piece">♚</div>
+    <div class="square black-square black-piece">♝</div>
+    <div class="square white-square black-piece">♞</div>
+    <div class="square black-square black-piece">♜</div>
+
+    <!-- BLACK PAWNS -->
+    <div class="square black-square black-piece">♟</div>
+    <div class="square white-square black-piece">♟</div>
+    <div class="square black-square black-piece">♟</div>
+    <div class="square white-square black-piece">♟</div>
+    <div class="square black-square black-piece">♟</div>
+    <div class="square white-square black-piece">♟</div>
+    <div class="square black-square black-piece">♟</div>
+    <div class="square white-square black-piece">♟</div>
+
+    <!-- EMPTY ROW -->
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+
+    <!-- EMPTY ROW -->
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+
+    <!-- EMPTY ROW -->
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+
+    <!-- EMPTY ROW -->
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+    <div class="square black-square"></div>
+    <div class="square white-square"></div>
+
+    <!-- WHITE PAWNS -->
+    <div class="square white-square white-piece">♙</div>
+    <div class="square black-square white-piece">♙</div>
+    <div class="square white-square white-piece">♙</div>
+    <div class="square black-square white-piece">♙</div>
+    <div class="square white-square white-piece">♙</div>
+    <div class="square black-square white-piece">♙</div>
+    <div class="square white-square white-piece">♙</div>
+    <div class="square black-square white-piece">♙</div>
+
+    <!-- WHITE PIECES -->
+    <div class="square black-square white-piece">♖</div>
+    <div class="square white-square white-piece">♘</div>
+    <div class="square black-square white-piece">♗</div>
+    <div class="square white-square white-piece">♕</div>
+    <div class="square black-square white-piece">♔</div>
+    <div class="square white-square white-piece">♗</div>
+    <div class="square black-square white-piece">♘</div>
+    <div class="square white-square white-piece">♖</div>
+
+</div>
+
+</body>
+</html>
