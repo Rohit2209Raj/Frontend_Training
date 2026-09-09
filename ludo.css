@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+}
+
+.board {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    border: 5px solid #222;
+    background: white;
+}
+
+/* ---------------- HOME AREAS ---------------- */
+
+.home {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    padding: 45px;
+    gap: 25px;
+}
+
+.red {
+    top: 0;
+    left: 0;
+    background: #e53935;
+}
+
+.green {
+    top: 0;
+    right: 0;
+    background: #43a047;
+}
+
+.yellow {
+    bottom: 0;
+    left: 0;
+    background: #fdd835;
+}
+
+.blue {
+    bottom: 0;
+    right: 0;
+    background: #1e88e5;
+}
+
+/* ---------------- TOKENS ---------------- */
+
+.circle {
+    background: white;
+    border: 3px solid #222;
+    border-radius: 50%;
+}
+
+/* ---------------- PATHS ---------------- */
+
+.path {
+    position: absolute;
+    background: white;
+}
+
+/* Vertical paths */
+
+.top,
+.bottom {
+    width: 20%;
+    height: 20%;
+    left: 40%;
+}
+
+.top {
+    top: 0;
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+}
+
+.bottom {
+    bottom: 0;
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+}
+
+/* Horizontal paths */
+
+.left,
+.right {
+    width: 20%;
+    height: 40%;
+    top: 30%;
+}
+
+.left {
+    left: 0;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+.right {
+    right: 0;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+/* ---------------- CENTER ---------------- */
+
+.center {
+    position: absolute;
+
+    width: 20%;
+    height: 20%;
+
+    top: 40%;
+    left: 40%;
+
+    background: white;
+    border: 2px solid #222;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    overflow: hidden;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+}
+
+/* Center four colors */
+
+.red-triangle {
+    border-top: 58px solid #e53935;
+    border-right: 58px solid transparent;
+}
+
+.green-triangle {
+    border-top: 58px solid #43a047;
+    border-left: 58px solid transparent;
+}
+
+.yellow-triangle {
+    border-bottom: 58px solid #fdd835;
+    border-right: 58px solid transparent;
+}
+
+.blue-triangle {
+    border-bottom: 58px solid #1e88e5;
+    border-left: 58px solid transparent;
+}
