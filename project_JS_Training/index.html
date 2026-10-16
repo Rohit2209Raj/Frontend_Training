@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>Dynamic blog page
 <body>
     <header class="header">
-        <h1>Dynaic Blog</h1>
+        <h1>Dynamic Blog</h1>
+        <p>Read interesting posts from our blog</p>
     </header>
+
+    <main class="container">
+        <section class="control">
+            <input type="search" id="searchInput" placeholder="Search by title....">
+        </section>
+
+        <button id="reloadButton" type="button">Reload Post</button>
+
+        <p id="statusmessage" role="status" aria-live="'polite">Loading posts</p>
+        <section id="postcontainer" class="post-grid"></section>
+    </main>
 </body>
 </html>
