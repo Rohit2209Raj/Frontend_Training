@@ -96,7 +96,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Contact Form</h1>
+      <h1>Simple React Form</h1>
 
       <form onSubmit={handleSubmit}>
         <div>
@@ -104,6 +104,7 @@ function App() {
           <input
             type="text"
             name="name"
+            placeholder="Name"
             value={formData.name}
             onChange={handleChange}
             required
@@ -115,6 +116,7 @@ function App() {
           <input
             type="email"
             name="email"
+            placeholder="Email"
             value={formData.email}
             onChange={handleChange}
             required
